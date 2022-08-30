@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Net Salary Calculator</h1>
+      <div class="inputs">
+        <input
+          data-input
+          type="number"
+          placeholder="Your salary..."
+          min="500000"
+        />
+        <button
+          onclick="Calc()"
+          class="btn btn-2 hover-slide-right"
+          style="
+            width: 110px;
+            position: absolute;
+            left: 230px;
+            background: #fcfcfc;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+          "
+        >
+          <span>Calculate</span>
+        </button>
+      </div>
+      <h2 data-h2_1>Income tax 10% :</h2>
+      <h2 data-h2_2>Communal payments 12% :</h2>
+      <h2 data-h2_3>Fare 8% :</h2>
+      <h2 data-h2_4>Lunch 10% :</h2>
+      <h2 data-h2_5>Rent 15% :</h2>
+      <h2 data-h2_6>Family expense 5% :</h2>
+      <h1 data-h1>Net Salary :</h1>
+      <div class="btns">
+        <button onclick="location.reload()" class="btn btn-2 hover-slide-right">
+          <span
+            style="
+              padding-top: 5px;
+              font-size: 18px;
+              color: red;
+              border-top-left-radius: 10px;
+              border-bottom-left-radius: 10px;
+            "
+            >Please click me before reentering salary !</span
+          >
+        </button>
+      </div>
+      <!-- <button onclick="Calc()">Calculate</button> -->
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
